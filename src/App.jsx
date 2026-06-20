@@ -8,6 +8,38 @@ import './App.css'
 // import { FaAlignLeft } from "react-icons/fa";
 
 function App() {
+  // 1. Keep track of the active tab (default to 'tab1')
+  const [activeTab, setActiveTab] = useState('tab1');
+
+  // 2. Define your content for each view
+  const renderContent = () => {
+    switch (activeTab) {
+      case 'tab1':
+        return (
+          <div className="p-6 bg-blue-50 border border-blue-200 rounded-xl">
+            <h3 className="text-xl font-bold text-blue-800 mb-2">First Feature Content</h3>
+            <p className="text-gray-600">This is the completely unique content for the first button. Perfect for showing feature overviews, introductions, or primary data.</p>
+          </div>
+        );
+        case 'tab2':
+        return (
+          <div className="p-6 bg-purple-50 border border-purple-200 rounded-xl">
+            <h3 className="text-xl font-bold text-purple-800 mb-2">Second Feature Content</h3>
+            <p className="text-gray-600">Clicking the second button instantly swaps out the old view for this one. Great for analytics, services details, or secondary settings.</p>
+          </div>
+        );
+      case 'tab3':
+        return (
+          <div className="p-6 bg-emerald-50 border border-emerald-200 rounded-xl">
+            <h3 className="text-xl font-bold text-emerald-800 mb-2">Third Feature Content</h3>
+            <p className="text-gray-600">And here is the third entirely distinct layout. You can put forms, maps, pricing tiers, or whatever else you need right here.</p>
+          </div>
+        );
+        default:
+        return null;
+    }
+
+  }
 
   return (
     <>
@@ -23,32 +55,29 @@ function App() {
       </section>
       <section className='flex justify-start flex-col gap-4 p-2'>
         <div className='flex flex-row gap-2 p-4 items-center mb-6 bg-[#faf9fb]'>
-          {/* <button className='bg-transparent text-[#3a3546] font-normal'>HIRE TALENT</button> */}
           <button className='text-[#766d8f]    flex justify-center gap-2 items-center mx-auto shadow-xl text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group'>GET HIRED</button>
+        <button
+          class="relative cursor-pointer py-4 px-8 text-center font-barlow inline-flex justify-center text-base uppercase text-white rounded-lg border-solid transition-transform duration-300 ease-in-out group outline-offset-4 focus:outline focus:outline-2 focus:outline-white focus:outline-offset-4 overflow-hidden"
+        >
+          <span class="relative z-20 text-black">HIRE TALENT</span>
 
+          <span
+            class="absolute left-[-75%] top-0 h-full w-[50%] bg-white/20 rotate-12 z-10 blur-lg group-hover:left-[125%] transition-all duration-1000 ease-in-out"
+          ></span>
 
-<button
-  class="relative cursor-pointer py-4 px-8 text-center font-barlow inline-flex justify-center text-base uppercase text-white rounded-lg border-solid transition-transform duration-300 ease-in-out group outline-offset-4 focus:outline focus:outline-2 focus:outline-white focus:outline-offset-4 overflow-hidden"
->
-  <span class="relative z-20 text-black">HIRE TALENT</span>
-
-  <span
-    class="absolute left-[-75%] top-0 h-full w-[50%] bg-white/20 rotate-12 z-10 blur-lg group-hover:left-[125%] transition-all duration-1000 ease-in-out"
-  ></span>
-
-  <span
-    class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#151516] absolute h-[20%] rounded-tl-lg border-l-2 border-t-2 top-0 left-0"
-  ></span>
-  <span
-    class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#151516] absolute group-hover:h-[90%] h-[60%] rounded-tr-lg border-r-2 border-t-2 top-0 right-0"
-  ></span>
-  <span
-    class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#151516] absolute h-[60%] group-hover:h-[90%] rounded-bl-lg border-l-2 border-b-2 left-0 bottom-0"
-  ></span>
-  <span
-    class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#151516] absolute h-[20%] rounded-br-lg border-r-2 border-b-2 right-0 bottom-0"
-  ></span>
-</button>
+          <span
+            class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#151516] absolute h-[20%] rounded-tl-lg border-l-2 border-t-2 top-0 left-0"
+          ></span>
+          <span
+            class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#151516] absolute group-hover:h-[90%] h-[60%] rounded-tr-lg border-r-2 border-t-2 top-0 right-0"
+          ></span>
+          <span
+            class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#151516] absolute h-[60%] group-hover:h-[90%] rounded-bl-lg border-l-2 border-b-2 left-0 bottom-0"
+          ></span>
+          <span
+            class="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#151516] absolute h-[20%] rounded-br-lg border-r-2 border-b-2 right-0 bottom-0"
+          ></span>
+        </button>
 
 
         </div>
@@ -68,6 +97,36 @@ function App() {
           <button className='font-bold h-[40] text-center p-3 rounded-4xl border-[#0d0d2c] text-white bg-[#0d0d2c]'>Start your Project Brief</button>
         </div>
       </section>
+
+      <section className='w-full max-w-2xl mx-auto p-4'>
+        <div className='flex p-1 bg-gray-100 rounded-xl mb-6 space-x-1'>
+          <button onClick={() => setActiveTab('tab1')}
+          className={`w-full py-2.5 text-sm font-medium leading-5 rounded-lg transition-all duration-200
+            ${activeTab === 'tab1' 
+              ? 'bg-white text-blue-600 shadow-sm' 
+              : 'text-gray-600 hover:text-gray-800 hover:bg-white/50'}`}>Shots</button>
+          <button onClick={() => setActiveTab('tab2')}
+          className={`w-full py-2.5 text-sm font-medium leading-5 rounded-lg transition-all duration-200
+            ${activeTab === 'tab2' 
+              ? 'bg-white text-purple-600 shadow-sm' 
+              : 'text-gray-600 hover:text-gray-800 hover:bg-white/50'}`}>Artist</button>
+          <button onClick={() => setActiveTab('tab3')}
+          className={`w-full py-2.5 text-sm font-medium leading-5 rounded-lg transition-all duration-200
+            ${activeTab === 'tab3' 
+              ? 'bg-white text-emerald-600 shadow-sm' 
+              : 'text-gray-600 hover:text-gray-800 hover:bg-white/50'}`}>Service</button>
+        </div>
+
+        <div className="transition-all duration-300 ease-in-out">
+          {renderContent()}
+        </div>
+
+      </section>
+
+
+
+
+
       <footer className='flex justify-center items-center flex-col gap-6'>
         <div>
           <h6>Joannie</h6>
