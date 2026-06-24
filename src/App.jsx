@@ -26,14 +26,17 @@ function App() {
         return (
           <div className="p-6 bg-purple-50 border border-purple-200 rounded-xl flex gap-2 flex-col">
             <div>
-              <div className='w-10 h-24 rounded-full'>
+              {/* <div className='w-10 h-24 rounded-full'>
                 <img src={artistImage} alt="" className='rounded-full' />
-              </div>
+              </div> */}
               <div className='flex flex-col gap-4'>
-                <div className='flex flex-row gap-2'>
-                  <h3>Joella's Art</h3>
-                  <button>PRO</button>
-                  <button>SELECT</button>
+                <div className='flex flex-row gap-4 justify-start'>
+                  <div className='w-10 h-24 rounded-full'>
+                    <img src={artistImage} alt="" className='rounded-full' />
+                  </div>
+                  <h3 className='pt-2'>Joella's Art</h3>
+                  <a href="#" className='pt-2 bg-[#0d0d2c] text-white font-bold h-12 w-14 rounded-sm text-center'>PRO</a>
+                  <a href="#" className='pt-2 bg-[#0d0d2c] text-white font-bold h-12 w-18 text-center rounded-sm'>SELECT</a>
                 </div>
                 <div className='flex flex-row gap-4'>
                   {/* star icon */}
