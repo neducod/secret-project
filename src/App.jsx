@@ -5,7 +5,14 @@ import heroImg from './assets/hero.png'
 import './App.css'
 
 import artistImage from './assets/artist.jpeg'
-import { MdSettings } from "react-icons/md";  
+import { FaCheck } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
+import { LuCoins } from "react-icons/lu";
+import { FaLocationDot } from "react-icons/fa6";
+import { IoMdTime } from "react-icons/io";
+import { FaRegFileAlt } from "react-icons/fa";
+// import { CiFolderOn } from "react-icons/ci";
+import { TiFolder } from "react-icons/ti";
 
 // import { FaAlignLeft } from "react-icons/fa";
 
@@ -30,7 +37,7 @@ function App() {
               {/* <div className='w-10 h-24 rounded-full'>
                 <img src={artistImage} alt="" className='rounded-full' />
               </div> */}
-              <div className='flex flex-col gap-4'>
+              <div className='flex flex-col gap-6'>
                 <div className='flex flex-row gap-2 justify-start h-16 pt-4'>
                   <div className='w-10 h-24 rounded-full'>
                     <img src={artistImage} alt="" className='rounded-full' />
@@ -40,22 +47,28 @@ function App() {
                   <a href="#" className='pt-1 bg-[#0d0d2c] text-white font-normal h-8 w-18 text-center rounded-sm'>SELECT</a>
                 </div>
                 <div className='flex flex-row gap-2 justify-start items-center'>
-                  {/* star icon */}
-                  <MdSettings />
+                  <FaStar />
                   <p>4.9</p>
-                  <p>(3)</p>
-                  {/* CHECK ICONS */}
+                  <p className='text-gray-400'>(3)</p>
+                  <FaCheck />
                   <p>10 projects done</p>
                   {/* SIDE NOTE; 10 IS SUPPOSED TO BE DYNAMIC, 3 IS ALSO SUPPOSED TO BE DYNAMIC */}
                 </div>
-                <div>
-                  <div>
+                <div className='flex gap-4 flex-col'>
+                  <div className='flex flex-row gap-2'>
+                    <LuCoins className='mt-1' />
                     <p>From $200/project</p>
                   </div>
-                  <div>
+                  <div className='flex flex-row gap-2'>
+                    <FaLocationDot className='mt-1' />
+                    <p>Unknown city, Nigeria</p>
+                  </div>
+                  <div className='flex gap-2 flex-row'>
+                    <IoMdTime className='mt-1' />
                     <p>Responds in about 15 minutes</p>
                   </div>
-                  <div>
+                  <div className='flex gap-2 flex-row'>
+                    <FaRegFileAlt className='mt-1' />
                     <p>2 services available</p>
                   </div>
                 </div>
@@ -64,9 +77,12 @@ function App() {
             <div>
               {/* SLIDESHOW */}
             </div>
-            <div>
-              <button>Get in Touch</button>
-              icon for favs
+            <div className='flex gap-4 justify-between'>
+              <a className='bg-[#0d0d2c] h-10 w-28 text-white text-center flex items-center justify-center rounded-sm '>Get in Touch</a>
+              <div className='flex justify-center items-center h-10 rounded-full  bg-gray-300'>
+                <TiFolder size={30}/>
+              </div>
+              {/* <CiFolderOn /> */}
             </div>
           </div>
         );
