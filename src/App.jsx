@@ -4,6 +4,7 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 
+import artistImage from './assets/artist.jpeg'
 
 // import { FaAlignLeft } from "react-icons/fa";
 
@@ -23,22 +24,88 @@ function App() {
         );
         case 'tab2':
         return (
-          <div className="p-6 bg-purple-50 border border-purple-200 rounded-xl">
-            <h3 className="text-xl font-bold text-purple-800 mb-2">Second Feature Content</h3>
-            <p className="text-gray-600">Clicking the second button instantly swaps out the old view for this one. Great for analytics, services details, or secondary settings.</p>
+          <div className="p-6 bg-purple-50 border border-purple-200 rounded-xl flex gap-2 flex-col">
+            <div>
+              <div className='w-10 h-24 rounded-full'>
+                <img src={artistImage} alt="" className='rounded-full' />
+              </div>
+              <div className='flex flex-col gap-4'>
+                <div className='flex flex-row gap-2'>
+                  <h3>Joella's Art</h3>
+                  <button>PRO</button>
+                  <button>SELECT</button>
+                </div>
+                <div className='flex flex-row gap-4'>
+                  {/* star icon */}
+                  <p>4.9</p>
+                  <p>(3)</p>
+                  {/* CHECK ICONS */}
+                  <p>10 projects done</p>
+                  {/* SIDE NOTE; 10 IS SUPPOSED TO BE DYNAMIC, 3 IS ALSO SUPPOSED TO BE DYNAMIC */}
+                </div>
+                <div>
+                  <div>
+                    <p>From $200/project</p>
+                  </div>
+                  <div>
+                    <p>Responds in about 15 minutes</p>
+                  </div>
+                  <div>
+                    <p>2 services available</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              {/* SLIDESHOW */}
+            </div>
+            <div>
+              <button>Get in Touch</button>
+              icon for favs
+            </div>
           </div>
         );
       case 'tab3':
         return (
-          <div className="p-6 bg-emerald-50 border border-emerald-200 rounded-xl">
+          <div className="p-6 bg-emerald-50  flex gap-8 flex-col border border-emerald-200 rounded-xl">
             <h3 className="text-xl font-bold text-emerald-800 mb-2">Third Feature Content</h3>
-            <p className="text-gray-600">And here is the third entirely distinct layout. You can put forms, maps, pricing tiers, or whatever else you need right here.</p>
+            <div className='p-4 bg-white border border-amber-100'>
+              <h4>Brand identity</h4>
+              <div>
+                {/* image icon */}
+                <h4>Joan Jerome</h4>
+              </div>
+              <p>$100</p>
+            </div>
+            <div className='p-4 bg-white border border-amber-100'>
+              <h4>Assets Creation for games</h4>
+              <div>
+                {/* image icon */}
+                <h4>Joan Jerome</h4>
+              </div>
+              <p>$100</p>
+            </div>
+            <div className='p-4 bg-white border border-amber-100'>
+              <h4>Custom merchandise and appearl</h4>
+              <div>
+                {/* image icon */}
+                <h4>Joan Jerome</h4>
+              </div>
+              <p className='text-gray-600'>$100</p>
+            </div>
+            <div className='p-4 bg-white border border-amber-100'>
+              <h4>Custom potraits</h4>
+              <div>
+                {/* image icon */}
+                <h4>Joan Jerome</h4>
+              </div>
+              <p className='text-gray-600'>$100</p>
+            </div>
           </div>
         );
         default:
         return null;
     }
-
   }
 
   return (
@@ -46,13 +113,12 @@ function App() {
     <nav>
       {/* <FaAlignLeft /> */}
     </nav>
-      <section>
-        {/* SECTION FOR PERMANENT LAYOUT */}
+      {/* <section>
         <div className='flex justify-start flex-col gap-4 bg-[#0d0c22] p-6 fixed bottom-0'>
           <p className='text-white font-medium'>Get 20% (up to $100) off your first payment for design and development services on Dribbble! Use code WELCOME20 🎉</p>
           <a href="#" className='h-[31] w-36 rounded-full bg-[#f5f2f2] text-[#0d0c22] p-4 text-center'>Get Started</a>
         </div>
-      </section>
+      </section> */}
       <section className='flex justify-start flex-col gap-4 p-2'>
         <div className='flex flex-row gap-2 p-4 items-center mb-6 bg-[#faf9fb]'>
           <button className='text-[#766d8f]    flex justify-center gap-2 items-center mx-auto shadow-xl text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group'>GET HIRED</button>
@@ -127,7 +193,7 @@ function App() {
 
 
 
-      <footer className='flex justify-center items-center flex-col gap-6'>
+      <footer className='flex justify-center items-center flex-col gap-6 mt-6'>
         <div>
           <h6>Joannie</h6>
         </div>
