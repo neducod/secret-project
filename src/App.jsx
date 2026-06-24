@@ -5,6 +5,7 @@ import heroImg from './assets/hero.png'
 import './App.css'
 
 import artistImage from './assets/artist.jpeg'
+import { MdSettings } from "react-icons/md";  
 
 // import { FaAlignLeft } from "react-icons/fa";
 
@@ -30,16 +31,17 @@ function App() {
                 <img src={artistImage} alt="" className='rounded-full' />
               </div> */}
               <div className='flex flex-col gap-4'>
-                <div className='flex flex-row gap-4 justify-start'>
+                <div className='flex flex-row gap-2 justify-start h-16 pt-4'>
                   <div className='w-10 h-24 rounded-full'>
                     <img src={artistImage} alt="" className='rounded-full' />
                   </div>
-                  <h3 className='pt-2'>Joella's Art</h3>
-                  <a href="#" className='pt-2 bg-[#0d0d2c] text-white font-bold h-12 w-14 rounded-sm text-center'>PRO</a>
-                  <a href="#" className='pt-2 bg-[#0d0d2c] text-white font-bold h-12 w-18 text-center rounded-sm'>SELECT</a>
+                  <h3 className='pt-2 font-bold'>Joella's Art</h3>
+                  <a href="#" className='pt-1 bg-[#0d0d2c] text-white font-normal h-8 w-14 rounded-sm text-center'>PRO</a>
+                  <a href="#" className='pt-1 bg-[#0d0d2c] text-white font-normal h-8 w-18 text-center rounded-sm'>SELECT</a>
                 </div>
-                <div className='flex flex-row gap-4'>
+                <div className='flex flex-row gap-2 justify-start items-center'>
                   {/* star icon */}
+                  <MdSettings />
                   <p>4.9</p>
                   <p>(3)</p>
                   {/* CHECK ICONS */}
