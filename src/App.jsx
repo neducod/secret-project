@@ -88,13 +88,12 @@ function App() {
         );
       case 'tab3':
         return (
-          <div className="p-6 bg-emerald-50  flex gap-8 flex-col border border-emerald-200 rounded-xl">
-            {/* <h3 className="text-xl font-bold text-emerald-800 mb-2">Third Feature Content</h3> */}
-            <div className='p-4 bg-white border border-amber-100'>
-              <div>
-                <img src={serviceOne} alt="" />
+          <div className="p-6 flex gap-8 flex-col border border-emerald-200 rounded-xl">
+            <div className=' bg-white flex flex-col gap-2 p-2'>
+              <div className='w-86 bg-blue-400'>
+                <img src={serviceOne} alt="" className='w-full'/>
               </div>
-              <h4 className='text-xl font-bold text-emerald-800'>Brand identity</h4>
+              <h4 className='text-xl font-bold text-[#0d0d2c]'>Brand identity</h4>
               <div className='flex flex-row gap-2'>
                 <img src={artistImage} alt="" className='h-8 rounded-full' />
                 <h4 className='pt-1 text-sm'>Joan Jerome</h4>
