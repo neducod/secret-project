@@ -89,16 +89,20 @@ function App() {
       case 'tab3':
         return (
           <div className="p-6 flex gap-8 flex-col border border-emerald-200 rounded-xl">
-            <div className=' bg-white flex flex-col gap-2 p-2'>
-              <div className='w-86 bg-blue-400'>
-                <img src={serviceOne} alt="" className='w-full'/>
+            <div className='max-w-sm w-full bg-white flex flex-col gap-3 p-4 rounded-xl shadow-sm transition-all hover:shadow-md'>
+              <div className='w-full aspect-[4/3] rounded-lg overflow-hidden bg-[#121212]'>
+                <img src={serviceOne} alt="Brand Identity" className='w-full h-full object-cover'/>
               </div>
-              <h4 className='text-xl font-bold text-[#0d0d2c]'>Brand identity</h4>
-              <div className='flex flex-row gap-2'>
-                <img src={artistImage} alt="" className='h-8 rounded-full' />
-                <h4 className='pt-1 text-sm'>Joan Jerome</h4>
+              <h4 className='text-lg font-extrabold tracking-tight leading-snug text-[#0d0d2c]'>Brand identity</h4>
+              <div className='flex items-center gap-2'>
+                <img src={artistImage} alt="" className='h-6 w-6 rounded-full object-cover' />
+                <span className='text-sm font-medium text-[#2d2d44]'>Joan Jerome</span>
+                <span className='text-[10px] font-bold text-[#6e6e80] bg-[#eef0f3] px-1.5 py-0.5 rounded uppercase tracking-wider'>PRO</span>
               </div>
-              <p className='text-sm'>$100</p>
+              <div className='flex items-center gap-1 mt-1"'>
+                <span className='text-base font-extrabold text-[#0d0d2c]'>$100</span>
+                <span className='text-yellow-400 text-sm' role="img" aria-label="lightning">⚡</span>
+              </div>
             </div>
             <div className='p-4 bg-white border border-amber-100'>
               <div>
