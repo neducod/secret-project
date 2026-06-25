@@ -1,7 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
 
 import artistImage from './assets/artist.jpeg'
@@ -11,8 +8,11 @@ import { LuCoins } from "react-icons/lu";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoMdTime } from "react-icons/io";
 import { FaRegFileAlt } from "react-icons/fa";
-// import { CiFolderOn } from "react-icons/ci";
 import { TiFolder } from "react-icons/ti";
+import serviceOne from './assets/servicesImagesOne.png'
+import serviceTwo from './assets/servicesImagesTwo.png'
+import serviceThree from './assets/servicesImagesThree.png'
+import serviceFour from './assets/servicesImagesFour.png'
 
 // import { FaAlignLeft } from "react-icons/fa";
 
@@ -75,10 +75,10 @@ function App() {
               </div>
             </div>
             <div>
-              {/* SLIDESHOW */}
+              {/* SLIDESHOW OF IMAGES DONE*/}
             </div>
             <div className='flex gap-4 justify-between'>
-              <a className='bg-[#0d0d2c] h-10 w-28 text-white text-center flex items-center justify-center rounded-sm '>Get in Touch</a>
+              <a className='bg-[#0d0d2c] h-10 w-56 text-white text-center flex items-center justify-center rounded-sm '>Get in Touch</a>
               <div className='flex justify-center items-center h-10 rounded-full  bg-gray-300'>
                 <TiFolder size={30}/>
               </div>
@@ -89,16 +89,22 @@ function App() {
       case 'tab3':
         return (
           <div className="p-6 bg-emerald-50  flex gap-8 flex-col border border-emerald-200 rounded-xl">
-            <h3 className="text-xl font-bold text-emerald-800 mb-2">Third Feature Content</h3>
+            {/* <h3 className="text-xl font-bold text-emerald-800 mb-2">Third Feature Content</h3> */}
             <div className='p-4 bg-white border border-amber-100'>
-              <h4>Brand identity</h4>
               <div>
-                {/* image icon */}
-                <h4>Joan Jerome</h4>
+                <img src={serviceOne} alt="" />
               </div>
-              <p>$100</p>
+              <h4 className='text-xl font-bold text-emerald-800'>Brand identity</h4>
+              <div className='flex flex-row gap-2'>
+                <img src={artistImage} alt="" className='h-8 rounded-full' />
+                <h4 className='pt-1 text-sm'>Joan Jerome</h4>
+              </div>
+              <p className='text-sm'>$100</p>
             </div>
             <div className='p-4 bg-white border border-amber-100'>
+              <div>
+                <img src={serviceTwo} alt="" />
+              </div>
               <h4>Assets Creation for games</h4>
               <div>
                 {/* image icon */}
@@ -107,6 +113,9 @@ function App() {
               <p>$100</p>
             </div>
             <div className='p-4 bg-white border border-amber-100'>
+              <div>
+                <img src={serviceThree} alt="" />
+              </div>
               <h4>Custom merchandise and appearl</h4>
               <div>
                 {/* image icon */}
@@ -115,6 +124,9 @@ function App() {
               <p className='text-gray-600'>$100</p>
             </div>
             <div className='p-4 bg-white border border-amber-100'>
+              <div>
+                <img src={serviceFour} alt="" />
+              </div>
               <h4>Custom potraits</h4>
               <div>
                 {/* image icon */}
