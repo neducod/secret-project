@@ -90,7 +90,7 @@ function App() {
         return (
           <div className="p-6 flex gap-8 flex-col border border-emerald-200 rounded-xl">
             <div className='max-w-sm w-full bg-white flex flex-col gap-3 p-4 rounded-xl shadow-sm transition-all hover:shadow-md'>
-              <div className='w-full aspect-[4/3] rounded-lg overflow-hidden bg-[#121212]'>
+              <div className='w-full rounded-lg overflow-hidden bg-[#121212]'>
                 <img src={serviceOne} alt="Brand Identity" className='w-full h-full object-cover'/>
               </div>
               <h4 className='text-lg font-extrabold tracking-tight leading-snug text-[#0d0d2c]'>Brand identity</h4>
@@ -104,16 +104,20 @@ function App() {
                 <span className='text-yellow-400 text-sm' role="img" aria-label="lightning">⚡</span>
               </div>
             </div>
-            <div className='p-4 bg-white border border-amber-100'>
-              <div>
-                <img src={serviceTwo} alt="" />
+            <div className='max-w-sm w-full bg-white flex flex-col gap-3 p-4 rounded-xl shadow-sm transition-all hover:shadow-md'>
+              <div className='w-full rounded-lg overflow-hidden bg-[#121212]'>
+                <img src={serviceTwo} alt="" className='w-full h-full object-cover'/>
               </div>
-              <h4>Assets Creation for games</h4>
-              <div>
-                {/* image icon */}
-                <h4>Joan Jerome</h4>
+              <h4 className='text-lg font-extrabold tracking-tight leading-snug text-[#0d0d2c]'>Assets Creation for games</h4>
+              <div className='flex items-center gap-2'>
+                <img src={artistImage} alt="" className='h-6 w-6 rounded-full object-cover' />
+                <span className='text-sm font-medium text-[#2d2d44]'>Joan Jerome</span>
+                <span className='text-[10px] font-bold text-[#6e6e80] bg-[#eef0f3] px-1.5 py-0.5 rounded uppercase tracking-wider'>PRO</span>
               </div>
-              <p>$100</p>
+              <div className='flex items-center gap-1 mt-1"'>
+                <span className='text-base font-extrabold text-[#0d0d2c]'>$100</span>
+                <span className='text-yellow-400 text-sm' role="img" aria-label="lightning">⚡</span>
+              </div>
             </div>
             <div className='p-4 bg-white border border-amber-100'>
               <div>
