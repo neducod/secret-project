@@ -196,7 +196,15 @@ function App() {
 
         </div>
 
-        <div>
+        <div className='max-w-xl w-full flex flex-col gap-6 md:gap-8 p-4 md:p-6 text-[#0d0d2c]'>
+          <div className="inline-flex gap-2 bg-[#f8f7fa] p-1.5 rounded-full self-start">
+            <button className="text-xs font-bold px-4 py-2 bg-white rounded-full border border-gray-200/80 shadow-sm uppercase tracking-wider text-[#0d0d2c]">
+              Hire Talent
+            </button>
+            <button className="text-xs font-bold px-4 py-2 text-[#9595a5] hover:text-[#0d0d2c] transition-colors uppercase tracking-wider">
+              Get Hired
+            </button>
+          </div>
           <h1 className='text-left items-center text-3xl font-semibold max-w-xs'>Work with the world’s best in <span>Artist</span></h1>
           <div className='flex flex-col gap-6 -mt-2'>
             <div>
