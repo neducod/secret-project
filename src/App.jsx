@@ -195,21 +195,26 @@ function App() {
 
 
         </div>
-        <h1 className='text-left items-center text-3xl font-semibold max-w-xs'>Work with the world’s best in <span>Artist</span></h1>
-        <div className='flex flex-col gap-6 -mt-2'>
-          <div>
-            <p className='text-base font-normal gap-4'>Generate your brief and receive proposals – for free</p>
-          </div>
-          <div>
-            <p>Browse real-world design and development work</p>
-          </div>
-          <div>
-            <p>Hire top-rated freelancers and agencies with confidence</p>
-          </div>
-        </div>
+
         <div>
-          <button className='font-bold h-[40] text-center p-3 rounded-4xl border-[#0d0d2c] text-white bg-[#0d0d2c]'>Start your Project Brief</button>
+          <h1 className='text-left items-center text-3xl font-semibold max-w-xs'>Work with the world’s best in <span>Artist</span></h1>
+          <div className='flex flex-col gap-6 -mt-2'>
+            <div>
+              <p className='text-base font-normal gap-4'>Generate your brief and receive proposals – for free</p>
+            </div>
+            <div>
+              <p>Browse real-world design and development work</p>
+            </div>
+            <div>
+              <p>Hire top-rated freelancers and agencies with confidence</p>
+            </div>
+          </div>
+          <div>
+            <button className='font-bold h-[40] text-center p-3 rounded-4xl border-[#0d0d2c] text-white bg-[#0d0d2c]'>Start your Project Brief</button>
+          </div>
         </div>
+
+
       </section>
 
       <section className='w-full max-w-2xl mx-auto p-4'>
