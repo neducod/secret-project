@@ -14,7 +14,12 @@ import serviceTwo from './assets/servicesImagesTwo.png'
 import serviceThree from './assets/servicesImagesThree.png'
 import serviceFour from './assets/servicesImagesFour.png'
 
-// import { FaAlignLeft } from "react-icons/fa";
+// import { GrGallery } from "react-icons/gr";<GrGallery />
+// import { CgProfile } from "react-icons/cg";<CgProfile />
+// import { FaServicestack } from "react-icons/fa";<FaServicestack />
+
+import { IoMdCheckmark } from "react-icons/io";
+
 
 function App() {
   // 1. Keep track of the active tab (default to 'tab1')
@@ -34,9 +39,6 @@ function App() {
         return (
           <div className="p-6 bg-purple-50 border border-purple-200 rounded-xl flex gap-2 flex-col">
             <div>
-              {/* <div className='w-10 h-24 rounded-full'>
-                <img src={artistImage} alt="" className='rounded-full' />
-              </div> */}
               <div className='flex flex-col gap-6'>
                 <div className='flex flex-row gap-2 justify-start h-16 pt-4'>
                   <div className='w-10 h-24 rounded-full'>
@@ -180,13 +182,16 @@ function App() {
           </div>
           <h1 className='text-left items-center text-3xl font-semibold max-w-xs'>Work with the world’s best in <span>Artist</span></h1>
           <div className='flex flex-col gap-6 -mt-2'>
-            <div>
-              <p className='text-base font-normal gap-4'>Generate your brief and receive proposals – for free</p>
+            <div className='flex justfiy-center items-center gap-4'>
+              <IoMdCheckmark />
+              <p className='text-sm font-normal gap-4'>Generate your brief and receive proposals – for free</p>
             </div>
             <div>
+              <IoMdCheckmark />
               <p>Browse real-world design and development work</p>
             </div>
             <div>
+              <IoMdCheckmark />
               <p>Hire top-rated freelancers and agencies with confidence</p>
             </div>
           </div>
