@@ -183,16 +183,18 @@ function App() {
           <h1 className='text-left items-center text-3xl font-semibold max-w-xs'>Work with the world’s best in <span>Artist</span></h1>
           <div className='flex flex-col gap-6 -mt-2'>
             <div className='flex justfiy-center items-center gap-4'>
-              <IoMdCheckmark />
+              <div className='bg-pink-300 rounded-full p-1'>
+                <IoMdCheckmark />
+              </div>
               <p className='text-sm font-normal gap-4'>Generate your brief and receive proposals – for free</p>
             </div>
-            <div>
+            <div className='flex justfiy-center items-center gap-4'>
               <IoMdCheckmark />
-              <p>Browse real-world design and development work</p>
+              <p className='text-sm font-normal '>Browse real-world design and development work</p>
             </div>
-            <div>
+            <div className='flex justify-center items-center gap-4'>
               <IoMdCheckmark />
-              <p>Hire top-rated freelancers and agencies with confidence</p>
+              <p className='text-base font-normal'>Hire top-rated freelancers and agencies with confidence</p>
             </div>
           </div>
           <div>
