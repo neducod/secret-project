@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import Hero from '../src/components/Hero'
+import Hero from './components/Hero'
 
 import artistImage from './assets/artist.jpeg'
 import { FaCheck } from "react-icons/fa";
