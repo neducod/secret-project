@@ -161,18 +161,18 @@ function App() {
 
   return (
     <>
-      <nav className='w-full bg-white px-4 py-4 md:px-8 border-b border-gray-100'>
-        <div className='max-w-7xl mx-auto flex items-center justify-between'>
-          <div className='flex items-center space-x-4'>
-            <CgMenuLeftAlt />
-            <a href="#" className='font-serif text-2xl font-black italic tracking-tight text-neutral-900 select-none'>Joannie</a>
+      <nav className='w-full px-4 py-4 md:px-8 flex justify-between items-center gap-20 mb-4'>
+        <div className='flex justify-center items-center gap-2'>
+          <div>
+            <CgMenuLeftAlt size={33}/>
+          </div>
+          <div>
+            <h1 className='text-[#0d0c22] italic text-xl'>Joannie</h1>
+            {/* THIS SHOULD ALSO HAVE A LINK COLOR AS WELL, we should add cursor pointer */}
           </div>
         </div>
-        <div className='flex items-center space-x-4'>
-          {/* DESKTOP ONLY */}
-          <a href="#" className='hidden md:block text-sm font-medium text-gray-600 hover:text-black transition'>Signup</a>
-
-          <a href="#" className='px-5 py-2.5 bg-[#0d0c22] text-white text-sm font-semibold rounded-full hover:bg-neutral-800 transition shadow-sm whitespace-nowrap'>Login</a>
+        <div>
+          <a href="#" className='px-5 py-2.5 bg-[#0d0c22] text-white text-sm font-semibold rounded-full hover:bg-neutral-800 transition shadow-sm whitespace-nowrrap'>Log in</a>
         </div>
       </nav>
       <section className='flex justify-start flex-col gap-4 p-2'>
