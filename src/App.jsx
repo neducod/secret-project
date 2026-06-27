@@ -186,7 +186,9 @@ function App() {
               Get Hired
             </button>
           </div>
-          <h1 className='text-left items-center text-3xl font-semibold max-w-xs'>Work with the world’s best in <span>Artist</span></h1>
+
+          <h1 className='text-left items-center text-3xl font-semibold max-w-xs'>Work with amazing talents in <span>Drawing</span></h1>
+          {/* drawing, painting, designing */}
           <div className='flex flex-col gap-6 -mt-2'>
             <div className='flex justfiy-center items-center gap-4'>
               <div className='bg-pink-300 rounded-full p-1'>
