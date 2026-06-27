@@ -5,8 +5,31 @@ import { IoMdCheckmark } from "react-icons/io";
 
 
 function Hero(){
+    const [activeTab, setActiveTab] = useState('tab1');
+
+    const renderHeroContent = () => {
+        switch (activeTab){
+            case 'tab1':
+            return(
+                <div className='p-4 bg-pink-400'>
+                    <h3>testing</h3>
+                </div>
+            );
+            case 'tab2':
+            return (
+                <div className='bg-pink-400 p-4'>
+                    <p>hghfhdddsddd</p>
+                </div>
+            );
+            default:
+            return null;
+        }
+    }
     return(
         <>
+            <section className=''>
+
+            </section>
             <section className='flex justify-start flex-col gap-4 p-2'>
                 <div className='max-w-xl w-full flex flex-col gap-6 md:gap-8 p-4 md:p-6 text-[#0d0d2c]'>
                     <div className="inline-flex gap-2 bg-[#f8f7fa] p-1.5 rounded-full self-start">
