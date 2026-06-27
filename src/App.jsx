@@ -160,15 +160,9 @@ function App() {
 
   return (
     <>
-    <nav>
-      {/* <FaAlignLeft /> */}
-    </nav>
-      {/* <section>
-        <div className='flex justify-start flex-col gap-4 bg-[#0d0c22] p-6 fixed bottom-0'>
-          <p className='text-white font-medium'>Get 20% (up to $100) off your first payment for design and development services on Dribbble! Use code WELCOME20 🎉</p>
-          <a href="#" className='h-[31] w-36 rounded-full bg-[#f5f2f2] text-[#0d0c22] p-4 text-center'>Get Started</a>
-        </div>
-      </section> */}
+      <nav>
+        content here
+      </nav>
       <section className='flex justify-start flex-col gap-4 p-2'>
 
         <div className='max-w-xl w-full flex flex-col gap-6 md:gap-8 p-4 md:p-6 text-[#0d0d2c]'>
@@ -189,12 +183,16 @@ function App() {
               <p className='text-sm font-normal gap-4'>Generate your brief and receive proposals – for free</p>
             </div>
             <div className='flex justfiy-center items-center gap-4'>
-              <IoMdCheckmark />
+              <div className='bg-pink-300 rounded-full p-1'>
+                <IoMdCheckmark />
+              </div>
               <p className='text-sm font-normal '>Browse real-world design and development work</p>
             </div>
             <div className='flex justify-center items-center gap-4'>
-              <IoMdCheckmark />
-              <p className='text-base font-normal'>Hire top-rated freelancers and agencies with confidence</p>
+              <div className='bg-pink-300 rounded-full p-1'>
+                <IoMdCheckmark />
+              </div>
+              <p className='text-sm font-normal'>Hire top-rated freelancers and agencies with confidence</p>
             </div>
           </div>
           <div>
@@ -257,6 +255,12 @@ function App() {
           {/* SOCIAL MEDIA ICONS */}
         </div>
       </footer>
+      {/* <section>
+        <div className='flex justify-start flex-col gap-4 bg-[#0d0c22] p-6 fixed bottom-0'>
+          <p className='text-white font-medium'>Get 20% (up to $100) off your first payment for design and development services on Dribbble! Use code WELCOME20 🎉</p>
+          <a href="#" className='h-[31] w-36 rounded-full bg-[#f5f2f2] text-[#0d0c22] p-4 text-center'>Get Started</a>
+        </div>
+      </section> */}
     </>
   )
 }
