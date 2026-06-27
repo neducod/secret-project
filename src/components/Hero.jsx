@@ -27,14 +27,28 @@ function Hero(){
     }
     return(
         <>
-            <section className=''>
+            <section className='flex justify-start flex-col gap-4 p-2'>
+                <div className='max-w-xl w-full flex flex-col gap-6 md:gap-8 p-4 md:p-6 text-[#0d0d2c]'>
+                    <div className='inline-flex gap-2 bg-[#f8f7fa] p-1.5 rounded-full self-start'>
+                        <button  onClick={() => setActiveTab('tab1')} className={`text-xs font-bold px-4 py-2 rounded-full border shadow-sm uppercase tracking-wider
+                        ${activeTab === 'tab1'
+                        ? 'bg-white text-[#0d0d2c] shadow-sm'
+                        : 'text-gray-400'}`}>Hire Talent</button>
 
+                        <button  onClick={() => setActiveTab('tab2')} className={`text-xs font-bold px-4 py-2 rounded-full border shadow-sm uppercase tracking-wider
+                        ${activeTab === 'tab2'
+                        ? 'bg-white text-[#0d0d2c] shadow-sm'
+                        : 'text-gray-400'}`}>get hired</button>
+
+                        
+                    </div>
+                </div>
             </section>
             <section className='flex justify-start flex-col gap-4 p-2'>
                 <div className='max-w-xl w-full flex flex-col gap-6 md:gap-8 p-4 md:p-6 text-[#0d0d2c]'>
                     <div className="inline-flex gap-2 bg-[#f8f7fa] p-1.5 rounded-full self-start">
                         <button className="text-xs font-bold px-4 py-2 bg-white rounded-full border border-gray-200/80 shadow-sm uppercase tracking-wider text-[#0d0d2c]">
-                        Hire Talent
+                            Hire Talent
                         </button>
                         <button className="text-xs font-bold px-4 py-2 text-[#9595a5] hover:text-[#0d0d2c] transition-colors uppercase tracking-wider">
                         Get Hired
