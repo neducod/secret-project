@@ -1,24 +1,4 @@
 import { useState } from 'react'
-// import './App.css'
-
-
-// import artistImage from './assets/artist.jpeg'
-// import { FaCheck } from "react-icons/fa";
-// import { FaStar } from "react-icons/fa";
-// import { LuCoins } from "react-icons/lu";
-// import { FaLocationDot } from "react-icons/fa6";
-// import { IoMdTime } from "react-icons/io";
-// import { FaRegFileAlt } from "react-icons/fa";
-// import { TiFolder } from "react-icons/ti";
-// import serviceOne from './assets/servicesImagesOne.png'
-// import serviceTwo from './assets/servicesImagesTwo.png'
-// import serviceThree from './assets/servicesImagesThree.png'
-// import serviceFour from './assets/servicesImagesFour.png'
-
-// import { GrGallery } from "react-icons/gr";<GrGallery />
-// import { CgProfile } from "react-icons/cg";<CgProfile />
-// import { FaServicestack } from "react-icons/fa";<FaServicestack />
-
 import { IoMdCheckmark } from "react-icons/io";
 // import { CgMenuLeftAlt } from "react-icons/cg";
 
