@@ -19,6 +19,7 @@ import serviceFour from './assets/servicesImagesFour.png'
 // import { FaServicestack } from "react-icons/fa";<FaServicestack />
 
 import { IoMdCheckmark } from "react-icons/io";
+import { CgMenuLeftAlt } from "react-icons/cg";
 
 
 function App() {
@@ -160,8 +161,19 @@ function App() {
 
   return (
     <>
-      <nav>
-        content here
+      <nav className='w-full bg-white px-4 py-4 md:px-8 border-b border-gray-100'>
+        <div className='max-w-7xl mx-auto flex items-center justify-between'>
+          <div className='flex items-center space-x-4'>
+            <CgMenuLeftAlt />
+            <a href="#" className='font-serif text-2xl font-black italic tracking-tight text-neutral-900 select-none'>Joannie</a>
+          </div>
+        </div>
+        <div className='flex items-center space-x-4'>
+          {/* DESKTOP ONLY */}
+          <a href="#" className='hidden md:block text-sm font-medium text-gray-600 hover:text-black transition'>Signup</a>
+
+          <a href="#" className='px-5 py-2.5 bg-[#0d0c22] text-white text-sm font-semibold rounded-full hover:bg-neutral-800 transition shadow-sm whitespace-nowrap'>Login</a>
+        </div>
       </nav>
       <section className='flex justify-start flex-col gap-4 p-2'>
 
