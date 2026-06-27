@@ -39,8 +39,10 @@ function Hero(){
                         ${activeTab === 'tab2'
                         ? 'bg-white text-[#0d0d2c] shadow-sm'
                         : 'text-gray-400'}`}>get hired</button>
+                    </div>
 
-                        
+                    <div className='transition-all duration-300 ease-in-out'>
+                        {renderHeroContent()}
                     </div>
                 </div>
             </section>
