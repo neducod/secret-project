@@ -1,7 +1,13 @@
 import { useState } from 'react'
 import { IoMdCheckmark } from "react-icons/io";
+
+import React, { useRef } from 'react';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 // import { FaRegFileImage } from "react-icons/fa";
 
+
+gsap.registerPlugin(useGSAP);
 
 
 function Hero(){
@@ -72,7 +78,7 @@ function Hero(){
                             <button className='font-bold h-[40] text-center p-3 rounded-4xl border-[#0d0d2c] text-white bg-[#0d0d2c] text-xs flex flex-row gap-2 justify-center items-center'> 
                             {/* <FaRegFileImage /> */}
                             Share your work</button>
-                            <button className='font-bold h-[40] text-center p-3 rounded-4xl border-[#0d0d2c] border text-[#0d0d2c] bg-white text-xs'>Bworse project brief's</button>
+                            <button className='font-bold h-[40] text-center p-3 rounded-4xl border-[#0d0d2c] border text-[#0d0d2c] bg-white text-xs'>Browse project brief's</button>
                         </div>
                     </div>
                 </div>
