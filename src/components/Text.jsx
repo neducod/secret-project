@@ -26,9 +26,9 @@ export default function HeroText() {
 
   return (
     <div className='max-w-xl w-full flex flex-col gap-6 md:gap-8 p-4 md:p-6 text-[#0d0d2c]'>
-      <h1 className="text-left items-center text-3xl font-semibold max-w-xs">
+      <h1 className="text-left items-center text-2xl font-semibold max-w-xs">
         Work with amazing talents in{' '}
-        <span className="inline-block min-w-[280px] text-[#ff007f]">
+        <span className="text-[#ff007f]">
           <span
             className={`inline-block transform duration-300 ease-out transition-all ${
               isTransitioning 
@@ -40,7 +40,7 @@ export default function HeroText() {
           </span>
         </span>
       </h1>
-      {/* className="flex min-h-[300px] items-center justify-center bg-white p-6" */}
+      {/* className="flex min-h-[300px] items-center justify-center bg-white p-6"   inline-block min-w-[280px]*/}
     </div>
   );
 }
