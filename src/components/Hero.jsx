@@ -19,6 +19,9 @@ function Hero(){
             return(
                 <div className='max-w-xl w-full flex flex-col gap-6 md:gap-8 p-4 md:p-6 text-[#0d0d2c]'>
                     <h1 className='text-left items-center text-3xl font-semibold max-w-xs'>Work with amazing talents in <span>Drawing</span></h1>
+                    <div>
+                        <Text/>
+                    </div>
                     {/* still art, animation   */}
 
                     <div className='flex flex-col gap-6 -mt-2'>
