@@ -8,7 +8,7 @@ export default function HeroText() {
 
   useEffect(() => {
     // 1. Calculate a random interval between 500ms (1/2s) and 1200ms (~1s)
-    const randomTime = Math.floor(Math.random() * (1200 - 500 + 1)) + 500;
+    const randomTime = Math.floor(Math.random() * (3000 - 500 + 1)) + 500;
 
     const timeout = setTimeout(() => {
       // 2. Start the fade-out phase slightly before changing the word
