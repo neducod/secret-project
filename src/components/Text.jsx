@@ -25,8 +25,8 @@ export default function HeroText() {
   }, [index]);
 
   return (
-    <div className="flex min-h-[300px] items-center justify-center bg-white p-6">
-      <h1 className="max-w-3xl text-left font-sans text-5xl font-extrabold tracking-tight text-[#0f0e17] sm:text-6xl md:text-7xl">
+    <div className='max-w-xl w-full flex flex-col gap-6 md:gap-8 p-4 md:p-6 text-[#0d0d2c]'>
+      <h1 className="text-left items-center text-3xl font-semibold max-w-xs">
         Work with the world’s best in{' '}
         <span className="inline-block min-w-[280px] text-[#ff007f]">
           <span
@@ -40,6 +40,7 @@ export default function HeroText() {
           </span>
         </span>
       </h1>
+      {/* className="flex min-h-[300px] items-center justify-center bg-white p-6" */}
     </div>
   );
 }
