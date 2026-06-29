@@ -7,6 +7,7 @@ import { useGSAP } from '@gsap/react';
 // import { FaRegFileImage } from "react-icons/fa";
 
 import Text from './Text'
+import Texttwo from './Herotext'
 gsap.registerPlugin(useGSAP);
 
 
@@ -55,6 +56,7 @@ function Hero(){
                         {/* <span>Create your profile</span> */}
                         <h1 className='text-left items-center text-3xl font-semibold max-w-xs'><span>Create your profile</span> and get hired</h1>
                         <div>
+                            <Texttwo/>
                             {/*  */}
                         </div>
                         <div className='flex flex-col gap-6 -mt-2'>
