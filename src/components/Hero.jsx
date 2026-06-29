@@ -53,8 +53,10 @@ function Hero(){
                 <div className='flex justify-start flex-col gap-4'>
                     <div className='max-w-xl w-full flex flex-col gap-6 md:gap-8 p-4 md:p-6 text-[#0d0d2c]'>
                         {/* <span>Create your profile</span> */}
-                        {/* CREATE YOUR PROFILE, BROWSE CLIENT BRIEFS, OFFER YOUR SERVICES, SHARE YOUR WORK */}
                         <h1 className='text-left items-center text-3xl font-semibold max-w-xs'><span>Create your profile</span> and get hired</h1>
+                        <div>
+                            {/*  */}
+                        </div>
                         <div className='flex flex-col gap-6 -mt-2'>
                             <div className='flex justfiy-center items-center gap-4'>
                                 <div className='bg-pink-300 rounded-full p-1'>
