@@ -25,8 +25,8 @@ export default function HeroText() {
   }, [index]);
 
   return (
-    <div className='max-w-xl w-full flex flex-col gap-6 md:gap-8 p-4 md:p-6 text-[#0d0d2c]'>
-      <h1 className="text-left items-center text-2xl font-semibold max-w-xs">
+    <div className='max-w-xl w-full flex flex-col gap-6 md:gap-8 md:p-6 text-[#0d0d2c]'>
+      <h1 className="items-center text-2xl font-semibold max-w-xs">
         Work with amazing talents in{' '}
         <span className="text-[#ff007f]">
           <span

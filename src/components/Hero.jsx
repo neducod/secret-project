@@ -17,13 +17,11 @@ function Hero(){
         switch (activeTab){
             case 'tab1':
             return(
-                <div className='max-w-xl w-full flex flex-col gap-6 md:gap-8 p-4 md:p-6 text-[#0d0d2c]'>
-                    <h1 className='text-left items-center text-3xl font-semibold max-w-xs'>Work with amazing talents in <span>Drawing</span></h1>
+                <div className='max-w-xl w-full flex flex-col gap-8 md:gap-8 p-4 md:p-6 text-[#0d0d2c]'>
+                    {/* <h1 className='text-left items-center text-3xl font-semibold max-w-xs'>Work with amazing talents in <span>Drawing</span></h1> */}
                     <div>
                         <Text/>
                     </div>
-                    {/* still art, animation   */}
-
                     <div className='flex flex-col gap-6 -mt-2'>
                         <div className='flex justfiy-center items-center gap-4'>
                             <div className='bg-pink-300 rounded-full p-1'>
@@ -93,7 +91,7 @@ function Hero(){
     }
     return(
         <>
-            <section className='flex justify-start flex-col gap-4 p-2'>
+            <section className='flex justify-start flex-col gap-6 p-2'>
                 <div className=''>
                     <div className='inline-flex gap-2 bg-[#f8f7fa] p-1.5 rounded-full self-start'>
                         <button  onClick={() => setActiveTab('tab1')} className={`text-xs font-bold px-4 py-2 rounded-full shadow-sm uppercase tracking-wider
