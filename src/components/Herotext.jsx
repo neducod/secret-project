@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const words = ['Create your profile', 'Browse client briefts', 'Offer your services', 'Share your work'];
+const words = ['Create your profile', 'Browse client briefs', 'Offer your services', 'Share your work'];
 
 export default function HeroText() {
     const [index, setIndex] = useState(0);
@@ -8,7 +8,7 @@ export default function HeroText() {
 
     useEffect(() => {
         // 1. Calculate a random interval between 500ms (1/2s) and 1200ms (~1s)
-        const randomTime = Math.floor(Math.random() * (3000 - 500 + 1)) + 500;
+        const randomTime = Math.floor(Math.random() * (4000 - 500 + 1)) + 500;
     
         const timeout = setTimeout(() => {
           // 2. Start the fade-out phase slightly before changing the word

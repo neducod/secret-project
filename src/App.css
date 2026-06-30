@@ -1,6 +1,15 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
 /* <button class="button-5" role="button">Button 5</button> */
 
+
+.custom{
+  font-family: "Lavishly Yours", cursive;
+  font-weight: 400;
+  /* font-style: normal; */
+  display: inline-block;
+  transform: rotate(-5deg)
+}
 /* CSS */
 .button-5 {
   align-items: center;

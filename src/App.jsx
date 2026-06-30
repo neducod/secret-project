@@ -162,12 +162,12 @@ function App() {
   return (
     <>
       <nav className='w-full px-4 py-4 md:px-8 flex justify-between items-center gap-20 mb-4'>
-        <div className='flex justify-center items-center gap-2'>
+        <div className='flex justify-center items-center gap-4'>
           <div>
             <CgMenuLeftAlt size={33}/>
           </div>
           <div>
-            <h1 className='text-[#0d0c22] italic text-xl'>Joannie</h1>
+            <h1 className='text-[#0d0c22] text-xl custom'>Joannie</h1>
             {/* THIS SHOULD ALSO HAVE A LINK COLOR AS WELL, we should add cursor pointer */}
           </div>
         </div>
