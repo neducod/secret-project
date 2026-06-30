@@ -15,9 +15,6 @@ import serviceTwo from './assets/servicesImagesTwo.png'
 import serviceThree from './assets/servicesImagesThree.png'
 import serviceFour from './assets/servicesImagesFour.png'
 
-// import { GrGallery } from "react-icons/gr";<GrGallery />
-// import { CgProfile } from "react-icons/cg";<CgProfile />
-// import { FaServicestack } from "react-icons/fa";<FaServicestack />
 
 import { CgMenuLeftAlt } from "react-icons/cg";
 
@@ -167,7 +164,7 @@ function App() {
             <CgMenuLeftAlt size={33}/>
           </div>
           <div>
-            <h1 className='text-[#0d0c22] text-xl custom'>Joannie</h1>
+            <h1 className='text-[#0d0c22] text-xl custom cursor-pointer'>Joannie</h1>
             {/* THIS SHOULD ALSO HAVE A LINK COLOR AS WELL, we should add cursor pointer */}
           </div>
         </div>
@@ -175,23 +172,23 @@ function App() {
           <a href="#" className='px-5 py-2.5 bg-[#0d0c22] text-white text-sm font-semibold rounded-full hover:bg-neutral-800 transition shadow-sm whitespace-nowrrap'>Log in</a>
         </div>
       </nav>
-      {/*  */}
+
       <Hero/>
 
       <section className='w-full max-w-2xl mx-auto p-4'>
         <div className='flex p-1 bg-gray-100 rounded-xl mb-6 space-x-1'>
           <button onClick={() => setActiveTab('tab1')}
-          className={`w-full py-2.5 text-sm font-medium leading-5 rounded-lg transition-all duration-200
+          className={`w-full py-2.5 text-xs font-medium leading-5 rounded-lg transition-all duration-200
             ${activeTab === 'tab1' 
               ? 'bg-white text-blue-600 shadow-sm' 
               : 'text-gray-600 hover:text-gray-800 hover:bg-white/50'}`}>Shots</button>
           <button onClick={() => setActiveTab('tab2')}
-          className={`w-full py-2.5 text-sm font-medium leading-5 rounded-lg transition-all duration-200
+          className={`w-full py-2.5 text-xs font-medium leading-5 rounded-lg transition-all duration-200
             ${activeTab === 'tab2' 
               ? 'bg-white text-purple-600 shadow-sm' 
               : 'text-gray-600 hover:text-gray-800 hover:bg-white/50'}`}>Artist</button>
           <button onClick={() => setActiveTab('tab3')}
-          className={`w-full py-2.5 text-sm font-medium leading-5 rounded-lg transition-all duration-200
+          className={`w-full py-2.5 text-xs font-medium leading-5 rounded-lg transition-all duration-200
             ${activeTab === 'tab3' 
               ? 'bg-white text-emerald-600 shadow-sm' 
               : 'text-gray-600 hover:text-gray-800 hover:bg-white/50'}`}>Service</button>
