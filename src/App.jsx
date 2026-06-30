@@ -204,11 +204,11 @@ function App() {
 
 
 
-      <footer className='flex justify-center items-center flex-col gap-6 mt-6'>
+      <footer className='flex justify-center items-center flex-col gap-4 mb-20'>
         <div>
-          <h6>Joannie</h6>
+          <h6 className='custom text-xm font-bold'>Joannie</h6>
         </div>
-        <div>
+        <div className='text-xs font-bold'>
           <ul className='flex flex-row gap-4'>
             <li><a href="#">For artist</a></li>
             <li><a href="#">Hire Talent</a></li>
@@ -216,7 +216,7 @@ function App() {
             <li><a href="#">Sponsorship</a></li>
           </ul>
         </div>
-        <div>
+        <div className='text-xs font-bold'>
           <ul className='flex flex-row gap-4'>
             <li><a href="#">About</a></li>
             <li><a href="#">Blog</a></li>
