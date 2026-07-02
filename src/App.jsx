@@ -18,8 +18,26 @@ import serviceFour from './assets/servicesImagesFour.png'
 
 import { CgMenuLeftAlt } from "react-icons/cg";
 
+import { FaXTwitter } from "react-icons/fa6";
+import { LuInstagram } from "react-icons/lu";
+import { FaTiktok } from "react-icons/fa";
+
+
+
+
+import React, { useState } from 'react';
+import { CgMenuLeftAlt, CgClose } from 'react-icons/cg';
+import { FiChevronDown } from 'react-icons/fi';
+
 
 function App() {
+  
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
+    const toggleMenu = () => {
+      setIsMenuOpen(!isMenuOpen);
+    };
+
   // 1. Keep track of the active tab (default to 'tab1')
   const [activeTab, setActiveTab] = useState('tab1');
 
@@ -173,6 +191,104 @@ function App() {
         </div>
       </nav>
 
+      <div className='w-full px-4 py-4 md:px-8 flex justify-between items-center mb-4 border-b border-gray-100 relative'>
+      <div className='flex items-center gap-4 md:gap-8'>
+        {/* Mobile Hamburger - Visible on mobile (Screenshot 2026-07-02 at 07.56.32.png) */}
+        <button 
+          onClick={toggleMenu}
+          className='md:hidden cursor-pointer text-[#0d0c22] focus:outline-none'
+          aria-label="Toggle Menu"
+        >
+          <CgMenuLeftAlt size={33} />
+        </button>
+
+        {/* Logo */}
+        <div>
+          <h1 className='text-[#0d0c22] text-xl font-bold cursor-pointer hover:text-neutral-700 transition'>
+            Joannie
+          </h1>
+        </div>
+
+        {/* Desktop Navigation Links - (Screenshot 2026-07-02 at 07.56.17.png) */}
+        <div className='hidden md:flex items-center gap-6 text-sm font-semibold text-[#0d0c22]'>
+          <a href="#" className='hover:text-neutral-600 transition flex items-center gap-1'>
+            Explore <FiChevronDown size={14} />
+          </a>
+          <a href="#" className='hover:text-neutral-600 transition flex items-center gap-1'>
+            Hire Talent <FiChevronDown size={14} />
+          </a>
+          <a href="#" className='hover:text-neutral-600 transition flex items-center gap-1'>
+            Get Hired <FiChevronDown size={14} />
+          </a>
+          <a href="#" className='hover:text-neutral-600 transition flex items-center gap-1'>
+            Community <FiChevronDown size={14} />
+          </a>
+        </div>
+      </div>
+
+      {/* Right side: Authentication Actions */}
+      <div className='flex items-center gap-4'>
+        <a href="#" className='hidden md:inline-block text-sm font-semibold text-[#0d0c22] hover:text-neutral-600 transition'>
+          Sign up
+        </a>
+        <a 
+          href="#" 
+          className='px-5 py-2.5 bg-[#0d0c22] text-white text-sm font-semibold rounded-full hover:bg-neutral-800 transition shadow-sm whitespace-nowrap'
+        >
+          Log in
+        </a>
+      </div>
+
+      {/* Mobile Drawer Overlay - Only triggers when isMenuOpen is true */}
+      {isMenuOpen && (
+        <div className='fixed inset-0 bg-white z-50 p-6 flex flex-col justify-between md:hidden animate-fade-in'>
+          <div>
+            {/* Top Bar inside Mobile Menu */}
+            <div className='flex justify-between items-center mb-10'>
+              <h1 className='text-[#0d0c22] text-xl font-bold'>Joannie</h1>
+              <button onClick={toggleMenu} className='text-[#0d0c22] focus:outline-none'>
+                <CgClose size={30} />
+              </button>
+            </div>
+
+            {/* Mobile Links */}
+            <div className='flex flex-col gap-6 text-lg font-semibold text-[#0d0c22]'>
+              <a href="#" onClick={toggleMenu} className='hover:text-neutral-600 transition flex justify-between items-center'>
+                Explore <FiChevronDown size={18} />
+              </a>
+              <a href="#" onClick={toggleMenu} className='hover:text-neutral-600 transition flex justify-between items-center'>
+                Hire Talent <FiChevronDown size={18} />
+              </a>
+              <a href="#" onClick={toggleMenu} className='hover:text-neutral-600 transition flex justify-between items-center'>
+                Get Hired <FiChevronDown size={18} />
+              </a>
+              <a href="#" onClick={toggleMenu} className='hover:text-neutral-600 transition flex justify-between items-center'>
+                Community <FiChevronDown size={18} />
+              </a>
+            </div>
+          </div>
+
+          {/* Mobile Auth Buttons at the bottom */}
+          <div className='flex flex-col gap-3 mt-auto pb-6'>
+            <a 
+              href="#" 
+              onClick={toggleMenu}
+              className='w-full text-center py-3 border border-neutral-300 text-sm font-semibold text-[#0d0c22] rounded-full hover:bg-neutral-50 transition'
+            >
+              Sign up
+            </a>
+            <a 
+              href="#" 
+              onClick={toggleMenu}
+              className='w-full text-center py-3 bg-[#0d0c22] text-white text-sm font-semibold rounded-full hover:bg-neutral-800 transition shadow-sm'
+            >
+              Log in
+            </a>
+          </div>
+        </div>
+      )}
+      </div>
+
       <Hero/>
 
       <section className='w-full max-w-2xl mx-auto p-4'>
@@ -204,7 +320,7 @@ function App() {
 
 
 
-      <footer className='flex justify-center items-center flex-col gap-4 mb-20'>
+      <footer className='flex justify-center items-center flex-col gap-4 mb-6 '>
         <div>
           <h6 className='custom text-xm font-bold'>Joannie</h6>
         </div>
@@ -223,10 +339,13 @@ function App() {
             <li><a href="#">Support</a></li>
           </ul>
         </div>
-        <div>
-          {/* SOCIAL MEDIA ICONS */}
+        <div className='flex gap-2'>
+          <FaXTwitter />
+          <LuInstagram />
+          <FaTiktok />
         </div>
       </footer>
+
       {/* <section>
         <div className='flex justify-start flex-col gap-4 bg-[#0d0c22] p-6 fixed bottom-0'>
           <p className='text-white font-medium'>Get 20% (up to $100) off your first payment for design and development services on Dribbble! Use code WELCOME20 🎉</p>
