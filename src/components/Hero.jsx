@@ -19,7 +19,6 @@ function Hero(){
             case 'tab1':
             return(
                 <div className='max-w-xl w-full flex flex-col gap-8 md:gap-8 p-4 md:p-6 text-[#0d0d2c]'>
-                    {/* <h1 className='text-left items-center text-3xl font-semibold max-w-xs'>Work with amazing talents in <span>Drawing</span></h1> */}
                     <div>
                         <Text/>
                     </div>
@@ -93,7 +92,7 @@ function Hero(){
     }
     return(
         <>
-            <section className='flex justify-start flex-col gap-6 p-2 bg-pink-50 md:justify-between md:leading-7 md:font-normal md:pt-[40px] md:px-[72px] md:pb-[60px]'>
+            <section className='flex justify-start flex-col gap-6 p-2 md:justify-between md:leading-7 md:font-normal'>
                 <div className=''>
                     <div className='inline-flex gap-2 bg-[#f8f7fa] p-1.5 rounded-full self-start'>
                         <button  onClick={() => setActiveTab('tab1')} className={`text-xs font-bold px-4 py-2 rounded-full shadow-sm uppercase tracking-wider
