@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const words = ['Drawing', 'Visual Arts', 'Graphic arts', 'Protraits'];
+const words = ['Drawing', 'Visual Arts', 'Graphics', 'Protraits'];
 
 export default function HeroText() {
   const [index, setIndex] = useState(0);
