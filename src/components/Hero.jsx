@@ -97,9 +97,9 @@ function Hero(){
     }
     return(
         <>
-            <section className='flex justify-start flex-col gap-6 p-2 md:justify-between md:leading-7 md:font-normal'>
+            <section className='flex justify-start flex-col gap-6 p-2 md:justify-between md:leading-7 md:font-normal md:pl-40 md:pb-20 md:pt-10'>
                 <div className=''>
-                    <div className='inline-flex gap-2 bg-[#f8f7fa] p-1.5 rounded-full self-start'>
+                    <div className='inline-flex gap-2 bg-[#f8f7fa] p-1.5 rounded-full self-start md:ml-6'>
                         <button  onClick={() => setActiveTab('tab1')} className={`text-xs font-bold px-4 py-2 rounded-full shadow-sm uppercase tracking-wider
                         ${activeTab === 'tab1'
                         ? 'bg-white text-[#0d0d2c] shadow-sm border'
