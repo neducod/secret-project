@@ -177,7 +177,7 @@ function App() {
   return (
     <>
       <nav className='w-full px-4 py-4 md:px-8 flex justify-between items-center gap-20 mb-4'>
-        <div className='flex justify-center items-center gap-4'>
+        <div className='flex justify-center items-center gap-4 md:gap-20 md:p-6'>
           <div className='md:hidden'>
             <CgMenuLeftAlt size={33}/>
           </div>
