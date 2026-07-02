@@ -178,16 +178,32 @@ function App() {
     <>
       <nav className='w-full px-4 py-4 md:px-8 flex justify-between items-center gap-20 mb-4'>
         <div className='flex justify-center items-center gap-4'>
-          <div>
+          <div className='md:hidden'>
             <CgMenuLeftAlt size={33}/>
           </div>
           <div>
             <h1 className='text-[#0d0c22] text-xl custom cursor-pointer'>Joannie</h1>
             {/* THIS SHOULD ALSO HAVE A LINK COLOR AS WELL, we should add cursor pointer */}
           </div>
+
+          <div className='hidden md:flex items-center gap-6 text-sm font-semibold text-[#0d0c22]'>
+            <a href="#" className='hover:text-neutral-600 transition flex items-center gap-1'>
+              Explore <FiChevronDown size={14} />
+            </a>
+            <a href="#" className='hover:text-neutral-600 transition flex items-center gap-1'>
+              Hire Talent <FiChevronDown size={14} />
+            </a>
+            <a href="#" className='hover:text-neutral-600 transition flex items-center gap-1'>
+              Get Hired <FiChevronDown size={14} />
+            </a>
+            <a href="#" className='hover:text-neutral-600 transition flex items-center gap-1'>
+              Community <FiChevronDown size={14} />
+            </a>
+          </div>
         </div>
-        <div>
-          <a href="#" className='px-5 py-2.5 bg-[#0d0c22] text-white text-sm font-semibold rounded-full hover:bg-neutral-800 transition shadow-sm whitespace-nowrrap'>Log in</a>
+        <div className='md:flex md:flex-row-reverse md:gap-4'>
+          <a href="#" className='px-5 py-2.5 bg-[#0d0c22] text-white text-sm font-semibold rounded-full hover:bg-neutral-800 transition shadow-sm whitespace-nowrap'>Log in</a>
+          <a href="#" className='hidden md:px-5 md:block py-2.5 bg-white text-[#0d0c22] text-sm font-semibold rounded-full hover:bg-amber-100 transition shadow-sm whitespace-nowrap'>Sign up</a>
         </div>
       </nav>
 
