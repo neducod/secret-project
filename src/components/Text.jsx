@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const words = ['Drawing', 'Visual Arts', 'Graphic arts', 'Protraits making'];
+const words = ['Drawing', 'Visual Arts', 'Graphic arts', 'Protraits'];
 
 export default function HeroText() {
   const [index, setIndex] = useState(0);
@@ -26,7 +26,7 @@ export default function HeroText() {
 
   return (
     <div className='max-w-xl w-full flex flex-col gap-6 md:gap-8 text-[#0d0d2c]'>
-      <h1 className="items-center text-2xl font-semibold max-w-xs">
+      <h1 className="items-center text-2xl md:text-6xl font-semibold md:font-normal max-w-xs md:max-w-xl">
         Work with amazing talents in{' '}
         <span className="text-[#ff007f]">
           <span
