@@ -49,7 +49,7 @@ function Hero(){
                     </div>
 
                     <div>
-                        <button className='font-bold text-xs h-[40] text-center p-3 rounded-4xl border-[#0d0d2c] text-white bg-[#0d0d2c]'>Start your Project Brief</button>
+                        <button className='font-bold md:font-extrabold text-xs h-[40] md:h-[50] text-center p-3 md:p-4 rounded-4xl border-[#0d0d2c] text-white bg-[#0d0d2c]'>Start your Project Brief</button>
                     </div>
                 </div>
             );
@@ -83,10 +83,10 @@ function Hero(){
                         </div>
 
                         <div className='flex flex-row gap-4'>
-                            <button className='font-bold h-[40] text-center p-3 rounded-4xl border-[#0d0d2c] text-white bg-[#0d0d2c] text-xs flex flex-row gap-2 justify-center items-center'> 
+                            <button className='font-bold h-[40] md:h-[50] text-center p-3 md:p-4 rounded-4xl border-[#0d0d2c] text-white bg-[#0d0d2c] text-xs flex flex-row gap-2 justify-center items-center'> 
                             {/* <FaRegFileImage /> */}
                             Share your work</button>
-                            <button className='font-bold h-[40] text-center p-3 rounded-4xl border-[#0d0d2c] border text-[#0d0d2c] bg-white text-xs'>Browse project brief's</button>
+                            <button className='font-bold md:font-extrabold h-[40] md:h-[50] text-center p-3 md:p-4 rounded-4xl border-[#0d0d2c] border text-[#0d0d2c] bg-white text-xs'>Browse project brief's</button>
                         </div>
                     </div>
                 </div>
