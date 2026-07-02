@@ -4,7 +4,6 @@ import { IoMdCheckmark } from "react-icons/io";
 import React, { useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-// import { FaRegFileImage } from "react-icons/fa";
 
 import Text from './Text'
 import Texttwo from './Herotext'
@@ -35,12 +34,18 @@ function Hero(){
                             </div>
                             <p className='text-sm font-normal '>Browse real-world design and development work</p>
                         </div>
-                        <div className='flex justify-center items-center gap-2'>
+                        <div className='flex justfiy-center items-center gap-2'>
                             <div className='bg-pink-300 rounded-full p-1'>
                                 <IoMdCheckmark />
                             </div>
                             <p className='text-sm font-normal'>Hire top-rated freelancers and agencies with confidence</p>
                         </div>
+                        {/* <div className='flex justify-center items-center gap-2'>
+                            <div className='bg-pink-300 rounded-full p-1'>
+                                <IoMdCheckmark />
+                            </div>
+                            <p className='text-sm font-normal'>Hire top-rated freelancers and agencies with confidence</p>
+                        </div> */}
                     </div>
 
                     <div>
