@@ -56,7 +56,6 @@ function Hero(){
                         {/* <h1 className='text-left items-center text-3xl font-semibold max-w-xs'><span>Create your profile</span> and get hired</h1> */}
                         <div>
                             <Texttwo/>
-                            {/*  */}
                         </div>
                         <div className='flex flex-col gap-6 -mt-2'>
                             <div className='flex justfiy-center items-center gap-2'>
@@ -94,7 +93,7 @@ function Hero(){
     }
     return(
         <>
-            <section className='flex justify-start flex-col gap-6 p-2'>
+            <section className='flex justify-start flex-col gap-6 p-2 bg-pink-50 md:justify-between md:leading-7 md:font-normal md:pt-[40px] md:px-[72px] md:pb-[60px]'>
                 <div className=''>
                     <div className='inline-flex gap-2 bg-[#f8f7fa] p-1.5 rounded-full self-start'>
                         <button  onClick={() => setActiveTab('tab1')} className={`text-xs font-bold px-4 py-2 rounded-full shadow-sm uppercase tracking-wider
