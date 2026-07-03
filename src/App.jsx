@@ -108,7 +108,7 @@ function App() {
         );
       case 'tab3':
         return (
-          <div className="p-6 flex gap-8 flex-col border border-emerald-200 rounded-xl">
+          <div className="p-6 flex gap-8 md:gap-2 flex-col md:flex-row md:flex-wrap md:justify-center border border-emerald-200 rounded-xl">
             <div className='max-w-sm w-full bg-white flex flex-col gap-3 p-4 rounded-xl shadow-sm transition-all hover:shadow-md'>
               <div className='w-full rounded-lg overflow-hidden bg-[#121212]'>
                 <img src={serviceOne} alt="Brand Identity" className='w-full h-full object-cover'/>
