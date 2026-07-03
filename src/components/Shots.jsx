@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
-import { Search, Heart, Eye, ArrowUpRight, ChevronDown, Sparkles } from 'lucide-react';
+// import { Search, Heart, Eye, ArrowUpRight, ChevronDown, Sparkles } from 'lucide-react';
+import { FaSearch } from "react-icons/fa";
+import { CiHeart } from "react-icons/ci";
+import { FaEye } from "react-icons/fa6";
+import { FaArrowUp } from "react-icons/fa";
 
 export default function DesignDiscoveryPlatform() {
   const [selectedTag, setSelectedTag] = useState('dashboard');
@@ -122,7 +126,8 @@ export default function DesignDiscoveryPlatform() {
             className="w-full h-14 pl-6 pr-14 bg-gray-100 rounded-full text-base border-none focus:outline-none focus:ring-2 focus:ring-pink-400 placeholder-gray-500 transition-all"
           />
           <button className="absolute right-2 top-2 w-10 h-10 bg-pink-500 hover:bg-pink-600 rounded-full flex items-center justify-center text-white transition-colors">
-            <Search size={18} />
+            {/* <Search size={18} /> */}
+            <FaSearch size={18}/>
           </button>
         </div>
       </div>
@@ -152,7 +157,8 @@ export default function DesignDiscoveryPlatform() {
         {/* Right Side: Popular Dropdown Filter */}
         <button className="flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-xl text-sm font-medium hover:border-gray-400 transition-colors ml-auto md:ml-0">
           <span>Popular</span>
-          <ChevronDown size={16} className="text-gray-500" />
+          {/* <ChevronDown size={16} className="text-gray-500" /> */}
+          <CiHeart size={16} className="text-gray-500" />
         </button>
       </div>
 
@@ -180,7 +186,8 @@ export default function DesignDiscoveryPlatform() {
                   <div className="flex justify-between items-center w-full">
                     <span className="text-xs font-semibold uppercase tracking-wider bg-white/20 backdrop-blur-md px-2 py-1 rounded">Framer</span>
                     <div className="p-1.5 bg-white/20 backdrop-blur-md rounded-full">
-                      <ArrowUpRight size={16} />
+                      {/* <ArrowUpRight size={16} /> */}
+                      <FaArrowUp size={16}/>
                     </div>
                   </div>
                   <div className="mb-2">
@@ -224,11 +231,13 @@ export default function DesignDiscoveryPlatform() {
               ) : (
                 <div className="flex items-center gap-3 text-gray-500 flex-shrink-0 font-medium">
                   <div className="flex items-center gap-1 hover:text-pink-500 transition-colors">
-                    <Heart size={14} className="fill-current text-transparent hover:text-pink-500" />
+                    {/* <Heart size={14} className="fill-current text-transparent hover:text-pink-500" /> */}
+                    <CiHeart size={16} className="text-gray-500" />
                     <span>{card.likes}</span>
                   </div>
                   <div className="flex items-center gap-1">
-                    <Eye size={14} />
+                    {/* <Eye size={14} /> */}
+                    <FaEye  size={14}/>
                     <span>{card.views}</span>
                   </div>
                 </div>
