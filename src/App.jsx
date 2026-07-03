@@ -210,9 +210,9 @@ function App() {
       
 
       <Hero/>
-
-      <section className='w-full max-w-2xl mx-auto p-4'>
-        <div className='flex p-1 bg-gray-100 rounded-xl mb-6 space-x-1'>
+{/* w-full max-w-2xl mx-auto */}
+      <section className='md:ml-24 md:mr-24 p-4 flex justify-start flex-col'>
+        <div className='flex p-1 md:w-80 bg-gray-100 md:bg-white md:gap-4 rounded-xl mb-6 space-x-2'>
           <button onClick={() => setActiveTab('tab1')}
           className={`w-full py-2.5 text-xs font-medium leading-5 rounded-lg transition-all duration-200
             ${activeTab === 'tab1' 
