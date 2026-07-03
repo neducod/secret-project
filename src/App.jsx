@@ -24,7 +24,9 @@ import { FaTiktok } from "react-icons/fa";
 
 
 
-
+import { CiImageOn } from "react-icons/ci";
+import { AiOutlineProfile } from "react-icons/ai";
+import { LuUsers } from "react-icons/lu";
 import { FiChevronDown } from 'react-icons/fi';
 
 
@@ -214,20 +216,31 @@ function App() {
       <section className='md:ml-24 md:mr-24 p-4 flex justify-start flex-col'>
         <div className='flex p-1 md:w-80 bg-gray-100 md:bg-white md:gap-4 rounded-xl mb-6 space-x-2'>
           <button onClick={() => setActiveTab('tab1')}
-          className={`w-full py-2.5 text-xs font-medium leading-5 rounded-lg transition-all duration-200
+          className={`w-full py-2.5 text-xs font-medium leading-5 rounded-lg transition-all duration-200 md:flex md:justify-center md:gap-1
             ${activeTab === 'tab1' 
               ? 'bg-white text-blue-600 shadow-sm' 
-              : 'text-gray-600 hover:text-gray-800 hover:bg-white/50'}`}>Shots</button>
+              : 'text-gray-600 hover:text-gray-800 hover:bg-white/50'}`}>
+                <CiImageOn className='hidden md:block md:mt-0.5' size={17}/>
+                Shots
+
+          </button>
           <button onClick={() => setActiveTab('tab2')}
-          className={`w-full py-2.5 text-xs font-medium leading-5 rounded-lg transition-all duration-200
+          className={`w-full py-2.5 text-xs font-medium leading-5 rounded-lg transition-all duration-200 md:flex md:justify-center md:gap-1
             ${activeTab === 'tab2' 
               ? 'bg-white text-purple-600 shadow-sm' 
-              : 'text-gray-600 hover:text-gray-800 hover:bg-white/50'}`}>Artist</button>
+              : 'text-gray-600 hover:text-gray-800 hover:bg-white/50'}`}>
+                <LuUsers className='hidden md:block md:mt-0' size={17}/>
+                Artist
+                </button>
           <button onClick={() => setActiveTab('tab3')}
-          className={`w-full py-2.5 text-xs font-medium leading-5 rounded-lg transition-all duration-200
+          className={`w-full py-2.5 text-xs font-medium leading-5 rounded-lg transition-all duration-200 md:flex md:justify-center md:gap-1
             ${activeTab === 'tab3' 
               ? 'bg-white text-emerald-600 shadow-sm' 
-              : 'text-gray-600 hover:text-gray-800 hover:bg-white/50'}`}>Service</button>
+              : 'text-gray-600 hover:text-gray-800 hover:bg-white/50'}`}>
+                <AiOutlineProfile className='hidden md:block md:mt-0.5' size={17}/>
+                
+                Service
+              </button>
         </div>
 
         <div className="transition-all duration-300 ease-in-out">
