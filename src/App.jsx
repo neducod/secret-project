@@ -51,9 +51,7 @@ function App() {
         return (
           <div className="p-6 bg-blue-50 border border-blue-200 rounded-xl">
             <Shot />
-            <h3 className="text-xl font-bold text-blue-800 mb-2">First Feature Content</h3>
-            <p className="text-gray-600">This is the completely unique content for the first button. Perfect for showing feature overviews, introductions, or primary data.</p>
-          </div>
+      </div>
         );
         case 'tab2':
         return (
